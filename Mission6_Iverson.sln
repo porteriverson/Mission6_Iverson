@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission6", "Mission6\Mission6.csproj", "{11547E28-A608-4FBA-9E55-99991E70A83C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission6_Iverson", "Mission6_Iverson\Mission6_Iverson.csproj", "{11547E28-A608-4FBA-9E55-99991E70A83C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,4 +7,8 @@
         <RootNamespace>Mission6</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\img\JoelHiltonHeadshot.jpg" />
+    </ItemGroup>
+
 </Project>
