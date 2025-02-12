@@ -20,3 +20,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+.form-input{
+  width: 40%;
+}
+
+.form-input input{
+  width: 100%;
+  
+}
+
+.form-control label {
+  text-align: left;
+  /*display: flex;*/
+}
+
+.radio-button {
+  display: inline-flex;
+}

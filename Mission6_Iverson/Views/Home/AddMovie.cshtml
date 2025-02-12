@@ -3,4 +3,47 @@
 }
 
 
+<h2>Add a Movie to the Database</h2>
+<div class="form-input">
+    <form method="post" action="">
+        <label>Movie Title: </label>
+        <br>
+        <input required/>
+        <br><br>
+        <label >Movie Category: </label>
+        <br>
+        <input required/>
+        <br><br>
+        <label> Rating: </label>
+        <br>
+        <select name="" id="" required>
+            <option value="1">G</option>
+            <option value="2">PG</option>
+            <option value="3">PG-13</option>
+            <option value="4">R</option>
+        </select>
+        <br>
+        <label>Edited: </label>
+        <label>Yes<input class="radio-button" type="radio" name="choice" value="yes"/></label>
+        <label>No<input class = "radio-button" type="radio" name="choice" value="no"/></label>
+        <br><br>
+        <label> Lent To: </label>
+        <br>
+        <input maxlength="25"/>
+        <br><br>
+        <label >Notes: </label>
+        <br>
+        <input maxlength="25"/>
+        <br><br>
+        
+    </form>
+</div>
 
+
+@* private string MovieCategory; *@
+@* private string MovieYear; *@
+@* private string Director; *@
+@* private string Rating; *@
+@* private bool Edited; *@
+@* private string LentTo; *@
+@* private string Notes; *@
