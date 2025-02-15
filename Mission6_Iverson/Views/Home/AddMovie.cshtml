@@ -1,49 +1,49 @@
 @{
     ViewData["Title"] = "Add Movie";
 }
-
+@model Movie
 
 <h2>Add a Movie to the Database</h2>
 <div class="form-input">
-    <form method="post" action="">
-        <label>Movie Title: </label>
+    <form method="post" asp-action="AddMovie">
+        <label asp-for="MovieTitle">Movie Title: </label>
         <br>
-        <input required/>
+        <input asp-for="MovieTitle" required/>
         <br><br>
-        <label >Movie Category: </label>
+        <label asp-for="MovieCategory">Movie Category: </label>
         <br>
-        <input required/>
+        <input asp-for="MovieCategory" required/>
         <br><br>
-        <label> Rating: </label>
+        <label asp-for="Year">Year Released: </label>
         <br>
-        <select name="" id="" required>
-            <option value="1">G</option>
-            <option value="2">PG</option>
-            <option value="3">PG-13</option>
-            <option value="4">R</option>
+        <input asp-for="Year" required/>
+        <br><br>
+        <label asp-for="Director">Director: </label>
+        <br>
+        <input asp-for="Director" required/>
+        <br><br>
+        <label asp-for="Rating"> Rating: </label>
+        <br>
+        <select asp-for="Rating" id="" required>
+            <option value="G">G</option>
+            <option value="PG">PG</option>
+            <option value="PG-13">PG-13</option>
+            <option value="R">R</option>
         </select>
         <br>
-        <label>Edited: </label>
+        <label asp-for="Edited">Edited: </label>
         <label>Yes<input class="radio-button" type="radio" name="choice" value="yes"/></label>
-        <label>No<input class = "radio-button" type="radio" name="choice" value="no"/></label>
+        <label>No<input class="radio-button" type="radio" name="choice" value="no" checked/></label>
         <br><br>
-        <label> Lent To: </label>
+        <label asp-for="LentTo"> Lent To: </label>
         <br>
-        <input maxlength="25"/>
+        <input asp-for="LentTo" maxlength="25"/>
         <br><br>
-        <label >Notes: </label>
+        <label asp-for="Notes">Notes: </label>
         <br>
-        <input maxlength="25"/>
+        <input asp-for="Notes" maxlength="25"/>
         <br><br>
-        
+        <button type="submit">Add Movie to Database</button>
+
     </form>
 </div>
-
-
-@* private string MovieCategory; *@
-@* private string MovieYear; *@
-@* private string Director; *@
-@* private string Rating; *@
-@* private bool Edited; *@
-@* private string LentTo; *@
-@* private string Notes; *@
