@@ -35,5 +35,9 @@ public class HomeController : Controller
         _context.SaveChanges();
         return View("Confirmation");
     }
-    
+
+    public IActionResult ViewMovies()
+    {
+        return View();
+    }
 }
