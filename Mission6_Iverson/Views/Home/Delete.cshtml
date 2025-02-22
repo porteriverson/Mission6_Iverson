@@ -1,0 +1,8 @@
+@model Movie
+
+<h2>Do you want to delete this movie?</h2>
+<h4>@Model.Title, @Model.Year</h4>
+<form method="post">
+    <button type="submit" asp-route-MovieId="@Model.MovieId">Delete</button>
+    <a class="btn-outline-primary" asp-controller="Home" asp-action="ViewMovies" type="button">Cancel</a>
+</form>
